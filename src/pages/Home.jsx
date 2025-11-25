@@ -13,8 +13,9 @@ function Home() {
     const apiKey = import.meta.env.VITE_OMDB_API_KEY
 
     const response = await fetch(
-      `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`
-    )
+        `https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`
+      )
+      
 
     const data = await response.json()
     console.log(data)
